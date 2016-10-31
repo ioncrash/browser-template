@@ -11,6 +11,8 @@ $(()=>{
     e.preventDefault();
     let email = $('#sign-up-email').val();
     let password = $('#sign-up-password').val();
+    let confirmPassword = $('#confirm-password').val();
+    debugger;
     $('#sign-up-modal').modal('hide');
   });
 
