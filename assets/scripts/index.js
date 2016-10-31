@@ -32,4 +32,8 @@ $(()=>{
 
     $('#change-password-modal').modal('hide');
   });
+
+  $('#sign-out-button').on('click', function(e){
+    alert('you have signed out!');
+  });
 });
