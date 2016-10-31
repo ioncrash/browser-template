@@ -11,7 +11,6 @@ $(()=>{
     e.preventDefault();
     let email = $('#sign-up-email').val();
     let password = $('#sign-up-password').val();
-
     $('#sign-up-modal').modal('hide');
   });
 
@@ -22,6 +21,15 @@ $(()=>{
     let password = $('#sign-in-password').val();
     debugger;
 
-    $('#sign-up-modal').modal('hide');
+    $('#sign-in-modal').modal('hide');
+  });
+
+  $('.change-password-form').on('submit', function(e){
+    e.preventDefault();
+    let oldPassword = $('#old-password').val();
+    let newPassword = $('#new-password').val();
+    debugger;
+
+    $('#change-password-modal').modal('hide');
   });
 });
