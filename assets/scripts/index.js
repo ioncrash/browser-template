@@ -11,9 +11,17 @@ $(()=>{
     e.preventDefault();
     let email = $('#sign-up-email').val();
     let password = $('#sign-up-password').val();
-    debugger;
 
     $('#sign-up-modal').modal('hide');
   });
 
+
+  $('.sign-in-form').on('submit', function(e){
+    e.preventDefault();
+    let email = $('#sign-in-email').val();
+    let password = $('#sign-in-password').val();
+    debugger;
+
+    $('#sign-up-modal').modal('hide');
+  });
 });
